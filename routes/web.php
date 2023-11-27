@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('navbar');
+    $waktuSaatIni = Carbon::now();
+    $formattedTime = $waktuSaatIni->isoFormat('MMM D, YYYY | ddd, h:mm A');
+    return view('dashboard', ['formattedTime' => $formattedTime]);
 });
 
