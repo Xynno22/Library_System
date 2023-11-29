@@ -31,4 +31,13 @@
     </div>
 </div>
 
+<h3>Top Choices</h3>
+<div class="top-choice">
+    <div class="bookfav">
+        <img src="" alt="">
+        <a href=""></a>
+        <img src="" alt="">
+    </div>
+</div>
+
 @endsection

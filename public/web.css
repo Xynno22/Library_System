@@ -9,7 +9,7 @@ nav{
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 10%;
+    width: 8%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -42,12 +42,12 @@ nav a:hover{
 }
 .main-content{
     padding-left: 10%;
-    margin-left: 50px;
+    margin-left: 5px;
     margin-top: 30px;
 }
 
 .headerDashboard{
-    gap: 200px;
+    gap: 300px;
     display: flex;
     align-items: center;
 }
@@ -95,7 +95,6 @@ nav a:hover{
     display: flex;
     gap: 30px;
     margin: 50px 5px;
-    flex-wrap: wrap;
     
 }
 .content-1, .content-2, .content-3, .content-4{
@@ -107,12 +106,22 @@ nav a:hover{
 
 .thirdDashboard{
     display: flex;
-    gap: 30px;
+    gap: 25px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .list-1, .list-2{
+    border-radius: 20px;
     border: solid 1px;
-    width: 600px;
+    width: 550px;
     height: 360px;
 }
+
+.top-choice{
+    margin-top: 20px;
+    border: 1px solid;
+    height: 305px;
+    width: auto;
+}
+

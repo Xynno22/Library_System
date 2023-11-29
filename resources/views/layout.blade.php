@@ -11,10 +11,10 @@
 <body>
         <nav>
             <div class="ProfilIMG"></div>
-            <a href=""><img src="Asset/Dashboard.png" alt=""></a>
+            <a href="/Dashboard"><img src="Asset/Dashboard.png" alt=""></a>
+            <a href="/BookList"><img src="Asset/icon.png" alt=""></a>
             <a href=""><img src="Asset/OverdueBook.png" alt=""></a>
-            <a href=""><img src="Asset/UserList.png" alt=""></a>
-            <a href=""><img src="Asset/icon.png" alt=""></a>
+            <a href="/MemberList"><img src="Asset/UserList.png" alt=""></a>
             <a href=""><img src="Asset/Setting.png" alt=""></a>    
         </nav>
         <div class="main-content">

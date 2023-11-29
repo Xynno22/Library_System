@@ -1,7 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\MemberController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +17,11 @@ use Carbon\Carbon;
 */
 
 
-Route::get('/', function () {
+Route::get('/Dashboard', function () {
     $waktuSaatIni = Carbon::now();
     $formattedTime = $waktuSaatIni->isoFormat('MMM D, YYYY | ddd, h:mm A');
     return view('dashboard', ['formattedTime' => $formattedTime]);
 });
 
+Route::get('/BookList', [BookController::class, 'index']);
+Route::get('/MemberList', [MemberController::class, 'index']);
