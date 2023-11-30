@@ -14,6 +14,7 @@
                 <th>Gmail</th>
                 <th>Phone Number</th>
                 <th>Address</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +26,7 @@
                     <td>{{ $member->email }}</td>
                     <td>{{ $member->phonenumber }}</td>
                     <td>{{ $member->address }}</td>
+                    <td><div class="action"><a href=""><img src="Asset/update.png" alt=""></a><a href=""><img src="Asset/delete.png" alt=""></a></div></td>
                 </tr>
             @endforeach
         </tbody>

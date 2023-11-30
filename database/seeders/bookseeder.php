@@ -15,14 +15,90 @@ class bookseeder extends Seeder
      */
     public function run(): void
     {
-        // $publishers = [
-        //     [
-            
-        //     ], [
-                
-        //     ]
-        // ];
+        $books = [
+            [
+                'category_id' => '1',
+                'image' => 'TheMind.png',
+                'title' => 'okee',
+                'author' => 'annin',
+                'publisher' =>'dnun',
+                'publication_year' => '1990',
+                'sypnosis'=> 'aaaaaaaa',
+                'stock' => '10'
+            ],
+            [
+                'category_id' => '1',
+                'image' => 'TheMind.png',
+                'title' => 'okee',
+                'author' => 'annin',
+                'publisher' =>'dnun',
+                'publication_year' => '1990',
+                'sypnosis'=> 'aaaaaaaa',
+                'stock' => '10'
+            ],
+            [
+                'category_id' => '1',
+                'image' => 'TheMind.png',
+                'title' => 'okee',
+                'author' => 'annin',
+                'publisher' =>'dnun',
+                'publication_year' => '1990',
+                'sypnosis'=> 'aaaaaaaa',
+                'stock' => '10'
+            ],
+            [
+                'category_id' => '1',
+                'image' => 'TheMind.png',
+                'title' => 'okee',
+                'author' => 'annin',
+                'publisher' =>'dnun',
+                'publication_year' => '1990',
+                'sypnosis'=> 'aaaaaaaa',
+                'stock' => '10'
+            ],
+            [
+                'category_id' => '1',
+                'image' => 'TheMind.png',
+                'title' => 'okee',
+                'author' => 'annin',
+                'publisher' =>'dnun',
+                'publication_year' => '1990',
+                'sypnosis'=> 'aaaaaaaa',
+                'stock' => '10'
+            ],
+            [
+                'category_id' => '1',
+                'image' => 'TheMind.png',
+                'title' => 'okee',
+                'author' => 'annin',
+                'publisher' =>'dnun',
+                'publication_year' => '1990',
+                'sypnosis'=> 'aaaaaaaa',
+                'stock' => '10'
+            ],
+            [
+                'category_id' => '1',
+                'image' => 'TheMind.png',
+                'title' => 'okee',
+                'author' => 'annin',
+                'publisher' =>'dnun',
+                'publication_year' => '1990',
+                'sypnosis'=> 'aaaaaaaa',
+                'stock' => '10'
+            ],
+            [
+                'category_id' => '1',
+                'image' => 'TheMind.png',
+                'title' => 'okee',
+                'author' => 'annin',
+                'publisher' =>'dnun',
+                'publication_year' => '1990',
+                'sypnosis'=> 'aaaaaaaa',
+                'stock' => '10'
+            ]
 
-        // DB::table('books')->insert($publishers);
+        ];
+
+        DB::table('books')->insert($books); 
     }
 }

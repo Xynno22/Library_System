@@ -98,9 +98,9 @@ nav a:hover{
     
 }
 .content-1, .content-2, .content-3, .content-4{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 290px;
     height: 130px;
-    border: solid 1px;
     border-radius: 20px;
 }
 
@@ -112,16 +112,115 @@ nav a:hover{
 }
 
 .list-1, .list-2{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    border: solid 1px;
-    width: 550px;
+    width: 530px;
     height: 360px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
 }
 
+.list-1 h3{
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 500;
+}
+.list-1 th {
+    border-bottom:1px solid #BFB39F;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.list-1 td{
+    border-bottom: 1px solid #BFB39F;
+    font-size: 12px;
+    font-weight: 300;
+}
+.list-1 a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600px;
+    text-align: right;
+}
 .top-choice{
+    display: flex;
     margin-top: 20px;
-    border: 1px solid;
-    height: 305px;
-    width: auto;
+    height: 340px;
 }
 
+.bookfav{
+    display:flex;
+    flex-direction: row;
+    gap: 50px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.bookfav::-webkit-scrollbar{
+    display: none;
+}
+
+.listtop image{
+    max-width: 200px;
+    max-height: 250px;
+}
+
+.listtop a{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.listtop{
+    display: flex;
+    flex-direction: column;
+}
+
+.listtop p{
+    color: #BFB39F;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.userlist{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    gap: 50px;
+}
+
+.userlist h1{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.userlist table{
+    margin-left: 10%;
+    padding: 15px;
+    background-color: #BFB39F;
+    border-radius: 20px;
+    width: 1100px;
+    text-align: left;
+    
+}
+th{
+    border-bottom: 1px solid #F5F1EC;
+    height: 40px;
+}
+td {
+    border-bottom: 1px  solid #F5F1EC;
+    height: 50px;
+    margin-top: 20px;
+}
+.action{
+    display: flex;
+    gap: 10px;
+}
+.action img{
+    width: 30px;
+    height: 30px;
+}

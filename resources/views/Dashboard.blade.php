@@ -24,7 +24,28 @@
 
 <div class="thirdDashboard">
     <div class="list-1">
-
+        <h3>Member List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Book Issued</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($memberlist as $member)
+                    <tr>
+                        <td>{{ $member->member_id}}</td>
+                        <td>{{ $member->name }}</td>
+                        <td>{{ $member->department }}</td>
+                        <td>10</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+        <a href="/MemberList">see all</a>
     </div>
     <div class="list-2">
         
@@ -33,10 +54,15 @@
 
 <h3>Top Choices</h3>
 <div class="top-choice">
+    
     <div class="bookfav">
-        <img src="" alt="">
-        <a href=""></a>
-        <img src="" alt="">
+        @foreach ($booklist as $data)
+            <div class="listtop">
+                <img src="Asset/{{ $data->image }}" alt="">
+                <a href="">{{ $data->title }}</a>
+                <p>{{ $data->author }}</p>
+            </div>
+        @endforeach
     </div>
 </div>
 

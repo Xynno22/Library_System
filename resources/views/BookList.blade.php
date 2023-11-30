@@ -2,5 +2,4 @@
 
 
 @section('container')
-    <p>{{ }}</p>
 @endsection
