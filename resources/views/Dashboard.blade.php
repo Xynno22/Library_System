@@ -48,7 +48,28 @@
         <a href="/MemberList">see all</a>
     </div>
     <div class="list-2">
-        
+        <h3>Book List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Available</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($booklist as $book)
+                    <tr>
+                        <td>{{ $book->book_id}}</td>
+                        <td>{{ $book->title }}</td>
+                        <td>{{ $book->author }}</td>
+                        <td>10</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+        <a href="/MemberList">see all</a>
     </div>
 </div>
 
@@ -56,7 +77,7 @@
 <div class="top-choice">
     
     <div class="bookfav">
-        @foreach ($booklist as $data)
+        @foreach ($favbook as $data)
             <div class="listtop">
                 <img src="Asset/{{ $data->image }}" alt="">
                 <a href="">{{ $data->title }}</a>

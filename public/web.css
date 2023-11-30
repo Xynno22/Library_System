@@ -122,23 +122,23 @@ nav a:hover{
     text-align: center;
 }
 
-.list-1 h3{
+.list-1 h3, .list-2 h3{
     text-align: justify;
     font-size: 24px;
     font-weight: 500;
 }
-.list-1 th {
+.list-1 th, .list-2 th {
     border-bottom:1px solid #BFB39F;
     font-size: 12px;
     font-weight: 600;
 }
 
-.list-1 td{
+.list-1 td, .list-2 td{
     border-bottom: 1px solid #BFB39F;
     font-size: 12px;
     font-weight: 300;
 }
-.list-1 a{
+.list-1 a, .list-2 a{
     text-decoration: none;
     font-size: 12px;
     font-weight: 600px;

@@ -10,8 +10,9 @@ use Carbon\Carbon;
 class DashboardController extends Controller
 {
     public function index(){
-        $books = Book::all();
-        $member = member::all();
+        $books =  Book::take(5)->get();
+        $member = member::take(5)->get();
+        $favbook = Book::all();
 
         $waktuSaatIni = Carbon::now();
         $formattedTime = $waktuSaatIni->isoFormat('MMM D, YYYY | ddd, h:mm A');
@@ -19,7 +20,8 @@ class DashboardController extends Controller
         return view('Dashboard', [
             'booklist' => $books,
             'formattedTime' => $formattedTime,
-            'memberlist' => $member
+            'memberlist' => $member,
+            'favbook' => $favbook
         ]); 
     }
 }
