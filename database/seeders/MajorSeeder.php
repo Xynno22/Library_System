@@ -6,17 +6,19 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-class memberseeder extends Seeder
+class MajorSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $loans = [
-        
-        ];
+    $majors = [
 
-        DB::table('members')->insert($loans);  
+        ['major' => 'Computer Science'],
+        ['major' => 'Cyber Security'],
+        ['major' => 'Mobile Programming']
+    ];
+        DB::table('majors')->insert($majors); 
     }
 }

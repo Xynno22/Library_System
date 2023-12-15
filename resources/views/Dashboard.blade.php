@@ -2,18 +2,7 @@
 
 
 @section('container')
-<div class="headerDashboard">
-    <div class="welcome">
-        <h3>Hello, <p>Leon!</p></h3>
-        <div id="tanggal-waktu">
-            {{ $formattedTime }}
-        </div>
-    </div>
-    <div class="searchBar">
-          <img src="Asset/Search.png" alt=""> 
-          <input type="text" class="search" placeholder="search...">
-    </div>
-</div>
+
 
 <div class="midDashboard">
     <div class="content-1"></div>
@@ -30,16 +19,16 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Department</th>
+                    <th>Major</th>
                     <th>Book Issued</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ($memberlist as $member)
                     <tr>
-                        <td>{{ $member->member_id}}</td>
+                        <td>{{ $member->id}}</td>
                         <td>{{ $member->name }}</td>
-                        <td>{{ $member->department }}</td>
+                        <td>{{ $member->major }}</td>
                         <td>10</td>
                     </tr>
                 @endforeach
@@ -61,7 +50,7 @@
             <tbody>
                 @foreach ($booklist as $book)
                     <tr>
-                        <td>{{ $book->book_id}}</td>
+                        <td>{{ $book->id}}</td>
                         <td>{{ $book->title }}</td>
                         <td>{{ $book->author }}</td>
                         <td>10</td>
@@ -77,10 +66,10 @@
 <div class="top-choice">
     
     <div class="bookfav">
-        @foreach ($favbook as $data)
+        @foreach ($favbook   as $data)
             <div class="listtop">
                 <img src="Asset/{{ $data->image }}" alt="">
-                <a href="">{{ $data->title }}</a>
+                <a href="/Detail/{{ $data->id }}">{{ $data->title }}</a>
                 <p>{{ $data->author }}</p>
             </div>
         @endforeach

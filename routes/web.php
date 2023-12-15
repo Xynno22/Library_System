@@ -18,9 +18,12 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 |
 */
 
-
-
-
-Route::get('/BookList', [BookController::class, 'index']);
-Route::get('/', [DashboardController::class, 'index']);
 Route::get('/MemberList', [MemberController::class, 'index']);
+Route::get('/addMember',[MemberController::class, 'AddDataMember']);
+Route::post('/Member', [MemberController::class, 'store']);
+Route::get('/editMember/{id}', [MemberController::class, 'edit']);
+Route::put('/Member/{id}', [MemberController::class, 'update']);
+
+Route::get('/Detail/{id}', [BookController::class, 'BookDetail']); 
+Route::get('/BookList',[BookController::class, 'index']);
+Route::get('/', [DashboardController::class, 'index']);

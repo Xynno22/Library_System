@@ -8,10 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class member extends Model
 {
     use HasFactory;
-    protected $primarykey = 'member_id';
+
+    protected $fillable = [
+        'name',
+        'email',
+        'phonenumber',
+        'address',
+        'major'
+    ];
 
     public function loans()
     {
         return $this->hasMany(Loan::class);
+    }
+
+    public function majors(){
+        return $this->belongsto(Major::class);
     }
 }

@@ -8,17 +8,18 @@ use Carbon\Carbon;
 
 class BookController extends Controller
 {
-    public function indexbook()
+    public function index()
     {
         $books = Book::all();
-        
-        $waktuSaatIni = Carbon::now();
-        $formattedTime = $waktuSaatIni->isoFormat('MMM D, YYYY | ddd, h:mm A');
 
-        return view('Dashboard', [
-            'booklist' => $books,
-            'formattedTime' => $formattedTime
-        ]);
+        return view('BookList',['booklist' => $books]);
+
+        
+    }
+
+    public function BookDetail($id){
+        $book = Book::findOrFail($id);
+        return view('Detail' , ['book' => $book]);
     }
    
 }

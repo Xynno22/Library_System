@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('members', function (Blueprint $table) {
-            $table->id('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('phonenumber');
-            $table->string('address');
+        Schema::create('majors', function (Blueprint $table) {
+            $table->id();
             $table->string('major');
             $table->timestamps();
         });
@@ -27,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::drop('members');
+        Schema::drop('majors');
     }
 };

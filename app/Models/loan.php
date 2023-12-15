@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class loan extends Model
 {
     use HasFactory;
-    protected $primarykey = 'loan_id';
 
     public function books()
     {

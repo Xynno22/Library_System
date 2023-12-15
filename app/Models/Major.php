@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class category extends Model
+class Major extends Model
 {
     use HasFactory;
 
-
-    public function books()
-    {
-        return $this->belongsToMany(book::class);
+    public function majors(){
+        return $this->hasMany(member::class);
     }
 }

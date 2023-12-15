@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class book extends Model
 {
     use HasFactory;
-    protected $primarykey = 'book_id';
 
     public function categories()
     {

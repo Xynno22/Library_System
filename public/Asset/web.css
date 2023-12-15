@@ -63,13 +63,13 @@ nav a:hover{
     font-weight: 700;
 }
 
-.welcome p{
-    margin-left: 5px;
-    font-size: 40px;
-    font-weight: 700;
-    color: #BFB39F;
+.welcome img{
+    margin-left: 15px;
+    height: 30px;
+
 }
 #tanggal-waktu{
+    margin-left: 10px;
     font-size: 15px;
     font-weight: 500;
 }
@@ -105,8 +105,9 @@ nav a:hover{
 }
 
 .thirdDashboard{
+    margin-left: 30px;
     display: flex;
-    gap: 25px;
+    gap: 100px;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -204,23 +205,33 @@ nav a:hover{
     background-color: #BFB39F;
     border-radius: 20px;
     width: 1100px;
-    text-align: left;
+    text-align: center;
     
 }
 th{
     border-bottom: 1px solid #F5F1EC;
+    border-right: 1px solid #F5F1EC;
     height: 40px;
 }
 td {
     border-bottom: 1px  solid #F5F1EC;
+    border-right: 1px solid #F5F1EC;
     height: 50px;
     margin-top: 20px;
 }
 .action{
+    margin-left: 10px;
     display: flex;
     gap: 10px;
 }
 .action img{
     width: 30px;
     height: 30px;
+}
+
+.addData{
+    background-color: #BFB39F;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
 }
