@@ -3,6 +3,7 @@
 
 @section('container')
 
+@include('header')
 
 <div class="midDashboard">
     <div class="content-1"></div>

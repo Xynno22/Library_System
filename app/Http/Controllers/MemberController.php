@@ -6,6 +6,7 @@ use App\Models\Major;
 use Illuminate\Http\Request;
 use App\Models\member;
 use Carbon\Carbon;
+use Illuminate\Contracts\Session\Session;
 use Termwind\Components\Dd;
 
 class MemberController extends Controller
@@ -37,6 +38,11 @@ class MemberController extends Controller
         // $member->department = $request->department;
         // $member->save();
         $member->create($request->all());
+        if($member){
+            Session()->flash('status', 'Task was successful!');
+            Session()->flash('message', 'Successfully added Member!');
+        }
+
         return redirect('/MemberList');
     }
 

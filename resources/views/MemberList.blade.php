@@ -7,7 +7,12 @@
     <h1>Member List</h1>
     <a href="/addMember"><button class="addData">Add Data</button></a> 
 
-   
+    @if (Session::has('status'))
+        <div class="alertSuccess">
+            {{Session()->get('message'); }}
+        </div>
+    @endif
+        
 
     <table>
         <thead>

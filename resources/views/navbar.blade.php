@@ -6,5 +6,4 @@
     <a href="/BookList"><img src="{{ asset('Asset/icon.png') }}" alt=""></a>
     <a href=""><img src="{{ asset('Asset/OverdueBook.png') }}" alt=""></a>
     <a href="/MemberList"><img src="{{ asset('Asset/UserList.png') }}" alt=""></a>
-    <a href="/Setting"><img src="{{ asset('Asset/Setting.png') }}" alt=""></a>    
 </nav>
