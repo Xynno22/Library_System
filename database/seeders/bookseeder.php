@@ -19,8 +19,8 @@ class bookseeder extends Seeder
             [
                 'category_id' => '1',
                 'image' => 'TheMind.png',
-                'title' => 'okee',
-                'author' => 'annin',
+                'title' => 'The Mind Of A Leader',
+                'author' => 'Kevin Anderson',
                 'publisher' =>'dnun',
                 'publication_year' => '1990',
                 'sypnosis'=> 'aaaaaaaa',
@@ -28,9 +28,9 @@ class bookseeder extends Seeder
             ],
             [
                 'category_id' => '1',
-                'image' => 'TheMind.png',
-                'title' => 'okee',
-                'author' => 'annin',
+                'image' => 'SpringBook.jpg',
+                'title' => 'Spring Book',
+                'author' => 'Deena Roberts',
                 'publisher' =>'dnun',
                 'publication_year' => '1990',
                 'sypnosis'=> 'aaaaaaaa',
@@ -38,65 +38,14 @@ class bookseeder extends Seeder
             ],
             [
                 'category_id' => '1',
-                'image' => 'TheMind.png',
-                'title' => 'okee',
-                'author' => 'annin',
-                'publisher' =>'dnun',
-                'publication_year' => '1990',
-                'sypnosis'=> 'aaaaaaaa',
-                'stock' => '10'
-            ],
-            [
-                'category_id' => '1',
-                'image' => 'TheMind.png',
-                'title' => 'okee',
-                'author' => 'annin',
-                'publisher' =>'dnun',
-                'publication_year' => '1990',
-                'sypnosis'=> 'aaaaaaaa',
-                'stock' => '10'
-            ],
-            [
-                'category_id' => '1',
-                'image' => 'TheMind.png',
-                'title' => 'okee',
-                'author' => 'annin',
-                'publisher' =>'dnun',
-                'publication_year' => '1990',
-                'sypnosis'=> 'aaaaaaaa',
-                'stock' => '10'
-            ],
-            [
-                'category_id' => '1',
-                'image' => 'TheMind.png',
-                'title' => 'okee',
-                'author' => 'annin',
-                'publisher' =>'dnun',
-                'publication_year' => '1990',
-                'sypnosis'=> 'aaaaaaaa',
-                'stock' => '10'
-            ],
-            [
-                'category_id' => '1',
-                'image' => 'TheMind.png',
-                'title' => 'okee',
-                'author' => 'annin',
-                'publisher' =>'dnun',
-                'publication_year' => '1990',
-                'sypnosis'=> 'aaaaaaaa',
-                'stock' => '10'
-            ],
-            [
-                'category_id' => '1',
-                'image' => 'TheMind.png',
-                'title' => 'okee',
-                'author' => 'annin',
+                'image' => 'Harry.jpg',
+                'title' => 'Harry Potter',
+                'author' => 'J.K. Rowling',
                 'publisher' =>'dnun',
                 'publication_year' => '1990',
                 'sypnosis'=> 'aaaaaaaa',
                 'stock' => '10'
             ]
-
         ];
 
         DB::table('books')->insert($books); 
