@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Major extends Model
+class status extends Model
 {
     use HasFactory;
-   
 
-    public function majors(){
-        return $this->hasMany(member::class);
+    public function loans()
+    {
+        return $this->belongsTo(loan::class);
     }
 }

@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this -> call([
-            bookseeder::class, memberseeder::class, loanseeder::class, categoryseeder::class, MajorSeeder::class
+            loanstatus::class, bookseeder::class, memberseeder::class, loanseeder::class, categoryseeder::class, MajorSeeder::class
           ]);
     }
 }

@@ -25,7 +25,28 @@ class categoryseeder extends Seeder
             ],
             [
                 'category' => 'Horor'
-            ]
+            ],
+            [
+                'category' => 'Thriller'
+            ],
+            [
+                'category' => 'Comedy'
+            ],
+            [
+                'category' => 'Mystery'
+            ],
+            [
+                'category' => 'Adventure'
+            ],
+            [
+                'category' => 'Historical'
+            ],
+            [
+                'category' => 'Crime'
+            ],
+            [
+                'category' => 'Drama'
+            ],
         ];
 
         DB::table('categories')->insert($category); 

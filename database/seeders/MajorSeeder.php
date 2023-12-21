@@ -17,7 +17,14 @@ class MajorSeeder extends Seeder
 
         ['major' => 'Computer Science'],
         ['major' => 'Cyber Security'],
-        ['major' => 'Mobile Programming']
+        ['major' => 'Mobile Programming'],
+        ['major' => 'Ilmu Komunikasi'],
+        ['major' => 'Sastra Inggris'],
+        ['major' => 'Sistem Informasi'],
+        ['major' => 'Sastra Jepang'],
+        ['major' => 'DKV'],
+        ['major' => 'Design Interior'],
+        ['major' => 'Bisnis Digital']
     ];
         DB::table('majors')->insert($majors); 
     }

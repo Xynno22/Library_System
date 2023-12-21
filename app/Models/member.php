@@ -11,11 +11,13 @@ class member extends Model
 
     protected $fillable = [
         'name',
+        'nim',
         'email',
         'phonenumber',
         'address',
         'major'
     ];
+
 
     public function loans()
     {

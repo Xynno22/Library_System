@@ -6,6 +6,7 @@ use App\Models\Major;
 use Illuminate\Http\Request;
 use App\Models\member;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Contracts\Session\Session;
 use Termwind\Components\Dd;
 
@@ -56,6 +57,29 @@ class MemberController extends Controller
     public function update(Request $request, $id){
         $member = member::findOrFail($id);
         $member->update($request->all());
+        if($member){
+            Session()->flash('status', 'Task was successful!');
+            Session()->flash('message', 'Successfully Update Member!');
+        }
         return redirect('/MemberList');
+    }
+
+    public function delete($id){
+        $member = member::findOrFail($id);
+        return view('deleteMember', [ 'members' => $member]);
+    }
+
+    public function destroy($id){
+        // $deleteMember = DB::table('members')->where('id', $id)->delete(); //QueryBuilder::delete
+        $deleteMember = member::findOrFail($id);
+        $deleteMember->delete();
+
+        if($deleteMember){
+            Session()->flash('status', 'Task was successful!');
+            Session()->flash('message', 'Successfully Delete Member!');
+        }
+
+        return redirect('/MemberList');
+
     }
 }

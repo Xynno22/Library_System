@@ -2,27 +2,42 @@
 
 @section('container')
 
-    <div class="createMember">
-        <form action="Member" method="post">
+        <h3 class="h3-DataMember">Add Data Member</h3>
+
+        <form class="row g-3 m-auto col-8 mt-5" action="Member" method="post">
             @csrf
-            <div>
-                <label for="name">name</label>
-                <input type="text" name="name">
-                <label for="email">email</label>
-                <input type="email" name="email">
-                <label for="phonenumber">phone</label>
-                <input type="tel" name="phonenumber">
-                <label for="Address">Address</label>
-                <input type="text" name="address">
-                <label for="major">Major</label>
-                <select name="major" id="">
+            <div class="col-12">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control border-dark" name="name">
+            </div>
+            <div class="col-md-6">
+                <label for="nim" class="form-label">NIM</label>
+                <input type="text" class="form-control border-dark" name="nim">
+            </div>
+            <div class="col-md-6">
+                <label for="major" class="form-label">Major</label>
+                <select id="inputState" class="form-select border-dark" name="major">
                     <option value="">Select Major</option>
                     @foreach ($majors as $data)
                         <option value="{{ $data->major }}">{{ $data->major }}</option>
                     @endforeach
                 </select>
             </div>
-            <button>Create</button>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control border-dark" name="email">
+            </div>
+            <div class="col-md-6">
+              <label for="phonenumber" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control border-dark" name="phonenumber" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control border-dark" name="address" id="inputAddress">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Create</button>
+            </div>
         </form>
-    </div>
+        
 @endsection

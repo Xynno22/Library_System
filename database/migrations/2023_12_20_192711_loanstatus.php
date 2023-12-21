@@ -11,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('loans', function (Blueprint $table) {
-            $table->id('id');
-            $table->string('booktitle');
-            $table->string('member');
-            $table->date('loan_date');
-            $table->date('due_date');
-            $table->date('return_date');
+        Schema::create('statuses', function (Blueprint $table) {
+            $table->id();
             $table->string('status');
             $table->timestamps();
         });
@@ -28,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::drop('loans');
+        Schema::drop('statuses');
     }
 };

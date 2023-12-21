@@ -5,8 +5,8 @@
             {{ $formattedTime }}
         </div>
     </div>
-    <div class="searchBar">
+    {{-- <div class="searchBar">
           <img src="Asset/Search.png" alt=""> 
           <input type="text" class="search" placeholder="search...">
-    </div>
+    </div> --}}
 </div>
